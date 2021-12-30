@@ -1,0 +1,158 @@
+.someClass {
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.nameTask {
+    padding: 20px;
+}
+
+.low {
+    color: green;
+}
+
+.middle {
+    color: yellow;
+}
+
+.high {
+    color: red;
+}
+
+.lowButton {
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 10px 0 10px 50px;
+    position: relative;
+    background-color: green;
+    border: none;
+    padding: 8px;
+    width: 60px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+}
+
+.middleButton {
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 10px 0 10px 50px;
+    position: relative;
+    background-color: yellow;
+    border: none;
+    padding: 8px;
+    width: 60px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+}
+
+.highButton {
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 10px 0 10px 50px;
+    position: relative;
+    background-color: red;
+    border: none;
+    padding: 8px;
+    width: 60px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+}
+
+.allButton {
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 10px 0 10px 50px;
+    position: relative;
+    background-color: blue;
+    border: none;
+    padding: 8px;
+    width: 60px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+}
+
+.buttonStyle {
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 10px 0 10px 50px;
+    position: relative;
+    background-color: #f39c12;
+    border: none;
+    padding: 8px;
+    width: 60px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+}
+
+.buttonStyle:hover {
+    background: #fff;
+    box-shadow: 0px 2px 10px 5px #97B1BF;
+    color: #000;
+}
+
+.buttonStyle:after {
+    content: "";
+    background: #f1c40f;
+    display: block;
+    position: absolute;
+    padding-top: 100%;
+    padding-left: 100%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.buttonStyle:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+
+.x {
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 10px 0 10px 50px;
+    position: relative;
+    background-color: #f39c12;
+    border: none;
+    padding: 8px;
+    width: 30px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+}
+
+.x:hover {
+    background: #fff;
+    box-shadow: 0px 2px 10px 5px #97B1BF;
+    color: #000;
+}
+
+.x:after {
+    content: "";
+    background: #f1c40f;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.x:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}

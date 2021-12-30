@@ -1,0 +1,52 @@
+.message {
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.avatar {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: gray solid 1px;
+    margin: 5px;
+
+
+}
+
+.angle {
+    margin: 5px 0px 10px 5px;
+    width: 15px;
+    height: 15px;
+    background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 15px, rgba(255, 255, 255, 0.3) 0);
+}
+
+.wrapper {
+    margin: 10px 100px 10px 0px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px 10px 10px 0px;
+
+}
+
+.name {
+    font-size: 20px;
+    font-width: bold;
+    color: mediumpurple;
+}
+
+.text {
+    min-width: 150px;
+    max-width: 300px;
+    color: white;
+    word-wrap: break-word;
+
+}
+
+.time {
+    display: flex;
+    color: yellow;
+    justify-content: flex-end;
+
+}
+

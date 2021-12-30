@@ -1,0 +1,83 @@
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pacifico', cursive;
+}
+
+.formInput {
+    margin: 10px auto;
+    font-family: 'Pacifico', cursive;
+    color: #333;
+    font-size: 1.2rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.2rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 30%;
+    display: block;
+    border-bottom: 0.3rem solid transparent;
+    transition: all 0.3s;
+}
+
+.formLabel {
+    width: 35%;
+    text-align: left;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.3s;
+    transform: translateY(0rem);
+}
+
+.formInput:placeholder-shown + .formLabel {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(-4rem);
+    transform: translateY(-4rem);
+}
+
+.buttonStyle {
+    position: relative;
+    padding: 10px 40px;
+    margin: 10px;
+    border-radius: 10px;
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    color: #FFF;
+    text-decoration: none;
+    background-color: #3498DB;
+    border-bottom: 5px solid #2980B9;
+    text-shadow: 0 -2px #2980B9;
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+
+.disabledButton {
+    color: #97B1BF;
+}
+
+.buttonStyle:active {
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    border-bottom: 1px solid;
+}
+
+.error {
+    border: 3px solid red;
+}
+
+.errorClass {
+    color: red;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.2rem;
+
+}
+
+.totalUserStyle {
+    color: #333;
+    font-family: 'Pacifico', cursive;
+}
