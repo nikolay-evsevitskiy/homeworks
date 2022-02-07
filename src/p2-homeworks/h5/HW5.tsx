@@ -6,14 +6,12 @@ import {HashRouter} from "react-router-dom";
 
 function HW5() {
 
-    return (
-        <div>
-            <HashRouter>
-                <Header/>
-                <RoutesFunk/>
-            </HashRouter>
-        </div>
-    )
+    return <div>
+        <HashRouter>
+            <Header/>
+            <RoutesFunk/>
+        </HashRouter>
+    </div>
 }
 
 export default HW5
