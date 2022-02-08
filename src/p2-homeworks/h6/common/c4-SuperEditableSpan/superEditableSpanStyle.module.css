@@ -1,0 +1,13 @@
+.beautifulSpan{
+    font-weight: bold;
+    font-size: large;
+}
+
+.beautifulSpan:hover {
+    font-style: italic;
+    border-bottom: 2px solid indianred;
+    cursor: pointer;
+}
+
+
+
