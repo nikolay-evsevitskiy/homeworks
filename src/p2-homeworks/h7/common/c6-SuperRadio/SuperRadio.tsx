@@ -22,7 +22,7 @@ const SuperRadio: React.FC<SuperRadioPropsType> = (
     }
 
 
-    const mappedOptions: any[] = options ? options.map((o, i) => ( // map options with key
+    const mappedOptions: any[] = options ? options.map((o, i) => (
         <label key={name + '-' + i} className={s.radLabel}>
             <input
                 className={s.radInput}
@@ -30,7 +30,7 @@ const SuperRadio: React.FC<SuperRadioPropsType> = (
                 onChange={onChangeCallback}
                 value={o}
                 name={name}
-                checked={o === value}// name, checked, value, onChange
+                checked={o === value}
             />
             <div className={s.radDesign}></div>
             <div className={s.radText}>{o}</div>
