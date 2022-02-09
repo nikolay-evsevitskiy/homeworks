@@ -11,7 +11,7 @@ function Clock() {
     }
     const start = () => {
         stop()
-        const id: number = window.setInterval(() => {
+        const id: number = +setInterval(() => {
             const date = new Date()
             setDate(date)// setDate
         }, 1000)
@@ -25,13 +25,14 @@ function Clock() {
         setShow(false)// close
     }
 
-    const stringTime = `${date.getHours() < 10 ? '0' + date.getHours() : date.getHours()} : 
-    ${date.getMinutes() < 10 ? '0' + date.getMinutes() : date.getMinutes()} : 
-    ${date.getSeconds()}` // fix with date
-    const stringDate =
-        `${date.getDate() < 10 ? '0' + date.getDate() : date.getDate()}.
-        ${date.getMonth() < 10 ? '0' + date.getMonth() : date.getMonth()}.
-        ${date.getFullYear()}` // fix with date
+    const stringTime = date.toLocaleTimeString() ? date.toLocaleTimeString() : <br/>
+    //     `${date.getHours() < 10 ? '0' + date.getHours() : date.getHours()} :
+    // ${date.getMinutes() < 10 ? '0' + date.getMinutes() : date.getMinutes()} :
+    // ${date.getSeconds()}` // fix with date
+    const stringDate = date.toDateString() ? date.toDateString() : <br/>
+    // `${date.getDate() < 10 ? '0' + date.getDate() : date.getDate()}.
+    // ${date.getMonth() < 10 ? '0' + date.getMonth() : date.getMonth()}.
+    // ${date.getFullYear()}` // fix with date
 
     return (
         <div>
@@ -42,11 +43,11 @@ function Clock() {
                 {stringTime}
             </div>
 
-            {show && (
+            {show ?
                 <div>
                     {stringDate}
                 </div>
-            )}
+                : <br/>}
 
             <SuperButton onClick={start}>start</SuperButton>
             <SuperButton onClick={stop}>stop</SuperButton>

@@ -21,6 +21,15 @@ test('sort name up', () => {
     console.log(newState)
 
     // expect(...).toBe(...)
+    const result = [
+        1,
+        3,
+        4,
+        5,
+        2,
+        0
+    ].filter((i, k)=> i === newState[k]._id)
+    expect(result.length).toBe(newState.length)
     expect(newState[0].name).toBe('Александр')
     expect(newState.length).toBe(initialState.length)
     expect(newState[newState.length - 1].name).toBe('Кот')

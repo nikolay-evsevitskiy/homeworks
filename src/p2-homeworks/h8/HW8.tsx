@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import {homeWorkReducer} from './bll/homeWorkReducer'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
+import s from './nw8.module.css'
 
 export type InitialStateType = {
     _id: number
@@ -22,7 +23,7 @@ function HW8() {
 
     // need to fix any
     const finalPeople = people.map((p: InitialStateType) => (
-        <div key={p._id}>
+        <div key={p._id} className={s.item}>
             <span> {p.name} </span>
             <span> {p.age} </span>
         </div>
@@ -40,9 +41,9 @@ function HW8() {
             {/*should work (должно работать)*/}
             {finalPeople}
 
-            <div><SuperButton onClick={sortUp}>sort up</SuperButton></div>
-            <div><SuperButton onClick={sortDown}>sort down</SuperButton></div>
-            <div><SuperButton onClick={check18}>check 18</SuperButton></div>
+            <span><SuperButton onClick={sortUp}>sort up</SuperButton></span>
+            <span><SuperButton onClick={sortDown}>sort down</SuperButton></span>
+            <span><SuperButton onClick={check18}>check 18</SuperButton></span>
 
 
             <hr/>
