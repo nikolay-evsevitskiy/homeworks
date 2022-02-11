@@ -13,9 +13,7 @@ function HW12() {
     const dispatch = useDispatch()// useDispatch
     const onChangeCallback = (value: ThemeType) => {
         dispatch(changeThemeC(value))
-    }
-
-    //onChangeCallback
+    }//onChangeCallback
 
     return (
         <div className={s[theme]}>
