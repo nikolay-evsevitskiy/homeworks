@@ -35,54 +35,55 @@
 
 @-webkit-keyframes rainbow {
     0% {
-        background-position: 0% 82%
+        background-position: 0 82%
     }
     50% {
         background-position: 100% 19%
     }
     100% {
-        background-position: 0% 82%
+        background-position: 0 82%
     }
 }
 
 @-moz-keyframes rainbow {
     0% {
-        background-position: 0% 82%
+        background-position: 0 82%
     }
     50% {
         background-position: 100% 19%
     }
     100% {
-        background-position: 0% 82%
+        background-position: 0 82%
     }
 }
 
 @-o-keyframes rainbow {
     0% {
-        background-position: 0% 82%
+        background-position: 0 82%
     }
     50% {
         background-position: 100% 19%
     }
     100% {
-        background-position: 0% 82%
+        background-position: 0 82%
     }
 }
 
 @keyframes rainbow {
     0% {
-        background-position: 0% 82%
+        background-position: 0 82%
     }
     50% {
         background-position: 100% 19%
     }
     100% {
-        background-position: 0% 82%
+        background-position: 0 82%
     }
+
 }
 
 .rainbow-text {
-    font-family:arial black;
+    font-family: arial black, serif;
     font-size:70px;
     background-image:
             linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
